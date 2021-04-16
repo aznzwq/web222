@@ -2,21 +2,21 @@
  * Styles for the add-observation.html page 
  */
 
- /* Form outline and title */
- .form_outline {
-     border: 2px solid rgb(0 150 191 / 67%);
-     border-radius: 8px;
-     padding:10px;
-     margin-top:20px;
- }
+/* Form outline and title */
+.form_outline {
+  border: 2px solid rgb(0 150 191 / 67%);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+}
 
- .form_title {
-     margin-top:-23px;
-     background:white;
- }
+.form_title {
+  margin-top: -23px;
+  background: white;
+}
 
- /* Form field css */
- .error {
-     margin-left:5px;
-     color:red;
- }
+/* Form field css */
+.error {
+  margin-left: 5px;
+  color: red;
+}
