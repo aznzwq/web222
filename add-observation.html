@@ -69,7 +69,7 @@
             <!-- Species Guess -->
             <div>
               <label for="species_guess"
-                >Species Guess<span style="color: red">*</span></label
+                >Species Guess<span class="required">*</span></label
               >
             </div>
             <div>
@@ -83,7 +83,7 @@
             <!-- Description -->
             <div>
               <label for="desc"
-                >Description<span style="color: red">*</span></label
+                >Description<span class="required">*</span></label
               >
             </div>
             <div>
@@ -98,14 +98,14 @@
             <!-- Date Observed -->
             <div>
               <label for="date_obs"
-                >Date Observed<span style="color: red">*</span></label
+                >Date Observed<span class="required">*</span></label
               >
             </div>
             <div><input name="date_obs" type="date" required /></div>
             <!-- Notes -->
             <div><label for="notes">Notes</label></div>
             <div>
-              <textarea name="notes" style="width: 78%; height: 5em"></textarea>
+              <textarea name="notes" placeholder="Notes about observation..." style="width: 78%; height: 5em"></textarea>
             </div>
           </div>
 
@@ -114,7 +114,7 @@
             <h4 class="form_title" style="width: 65px">Location</h4>
             <!-- Latitude -->
             <div>
-              <label for="lad">Latitude<span style="color: red">*</span></label
+              <label for="lad">Latitude<span class="required">*</span></label
               ><span class="error" id="lad_error"></span>
             </div>
             <div>
@@ -129,7 +129,7 @@
             <!-- Longitude -->
             <div>
               <label for="long"
-                >Longitude<span style="color: red">*</span></label
+                >Longitude<span class="required">*</span></label
               ><span class="error" id="long_error"></span>
             </div>
             <div>
