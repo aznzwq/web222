@@ -10,37 +10,37 @@ function validate(event) {
   console.log(isNaN(lad));
   var long = document.getElementById("long").value;
   console.log(long);
-  var validated = false;
+  var ladval= false;
+  var longval = false
   if (!isNaN(lad)) {
     if (lad <= 90 && lad >= -90) {
       document.getElementById("lad_error").innerHTML = "";
-      validated = true;
+      ladval = true;
     } else {
-      validated = false;
+      ladval = false;
       document.getElementById("lad_error").innerHTML =
         "must be a valid Latitude (-90 to 90)";
     }
   } else {
-    validated = false;
+    ladval = false;
     document.getElementById("lad_error").innerHTML = 
       "must be a valid Latitude (-90 to 90)";
   }
   if (!isNaN(long)) {
     if (long <= 180 && long >= -180) {
       document.getElementById("long_error").innerHTML = "";
-      validated = true;
+      longval = true;
     } else {
-      validated = false;
+      longval = false;
       document.getElementById("long_error").innerHTML =
         "must be a valid Longitude (-180 to 180)";
     }
   } else {
-    validated = false;
+    longval = false;
     document.getElementById("long_error").innerHTML =
       "must be a valid Longitude (-180 to 180)";
   }
-  console.log(validated);
-  return validated;
+  return (longval && ladval);
 }
 
 // Wait for the window to load, then set up the submit event handler for the form.
