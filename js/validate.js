@@ -20,6 +20,10 @@ function validate(event) {
       document.getElementById("lad_error").innerHTML =
         "must be a valid Latitude (-90 to 90)";
     }
+  } else {
+    validated = false;
+    document.getElementById("lad_error").innerHTML = 
+      "must be a valid Latitude (-90 to 90)";
   }
   if (!isNaN(long)) {
     if (long <= 180 && long >= -180) {
@@ -30,6 +34,10 @@ function validate(event) {
       document.getElementById("long_error").innerHTML =
         "must be a valid Longitude (-180 to 180)";
     }
+  } else {
+    validated = false;
+    document.getElementById("long_error").innerHTML =
+      "must be a valid Longitude (-180 to 180)";
   }
   console.log(validated);
   return validated;
